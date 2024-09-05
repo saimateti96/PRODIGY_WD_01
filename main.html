@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Landing Page-Task 1</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo"><h2 id="logo2">Online  <span class="material-symbols-outlined">Groceries.</span></h2></div>
+      <div class="menu-toggle" id="menu-toggle" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
+        <i class="fa fa-times" style="display: none;"></i>
+      </div>
+      <ul class="menu" id="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li class="signup"><a href="#" class="login-btn">Sign up</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<div class="container">
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search products...">
+    <button class="search-button" onclick="searchProducts()">
+      <i class="fa fa-search"></i> Search
+    </button>
+  </div>
+  
+    
+    <!-- products -->
+    <!--  -->
+    <div class="product-grid">
+      <div class="product-item">
+        <img src="https://m.media-amazon.com/images/I/61NKu6+rWtL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+      <h3>Catch Sprinkles Black Salt, 200g</h3>
+      <p>₹39</p>
+      <a href="#" class="btn" onclick="addToCartAndShowMessage('Catch Sprinkles Black Salt', 39)">Add to Cart</a>
+      <a href="#" class="buy-btn" onclick="buyNow('Catch Sprinkles Black Salt', 39)">Buy Now</a>
+      </div>
+      <!--  -->
+    <div class="product-item">
+      <img src="https://m.media-amazon.com/images/I/71R+gIIK6UL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+      <h3>Dabur Himalayan Apple Cider Vinegar with Mother of Vinegar - 500ml</h3>
+      <p>₹199</p>
+      <a href="#" class="btn" onclick="addToCartAndShowMessage('Dabur Himalayan Apple Cider Vinegar', 199)">Add to Cart</a>
+      <a href="#" class="buy-btn" onclick="buyNow('Dabur Himalayan Apple Cider Vinegar', 199)">Buy Now</a>
+      </div>
+      <!--  -->
+    <div class="product-item">
+      <img src="https://m.media-amazon.com/images/I/81ILzuTdkbL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+      <h3>Fortune Sunlite Refined Sunflower Oil, 1L</h3>
+      <p>₹137</p>
+      <a href="#" class="btn" onclick="addToCartAndShowMessage('Fortune Sunlite Refined Sunflower Oil', 137)">Add to Cart</a>
+      <a href="#" class="buy-btn" onclick="buyNow('Fortune Sunlite Refined Sunflower Oil', 137)">Buy Now</a>
+      </div>
+    <div class="product-item">
+      <img src="https://m.media-amazon.com/images/I/61W64Ai46FL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+      <h3>Vedaka Sesame (Gingelly) Oil Bottle, 1 L (Cheku/Ghani) | 100% Pure </h3>
+      <p>₹525</p>
+      <a href="#" class="btn" onclick="addToCartAndShowMessage('Vedaka Sesame Gingelly Oil Bottle', 525)">Add to Cart</a>
+      <a href="#" class="buy-btn" onclick="buyNow('Vedaka Sesame Gingelly Oil Bottle', 525)">Buy Now</a>
+    </div>
+    <!--  -->
+    <div class="product-item">
+      <img src="https://m.media-amazon.com/images/I/610h+cTerLL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+      <h3>Comfort Morning Fresh Fabric Conditioner 860 mL | After Wash Liquid Fabric Softener </h3>
+      <p>₹220</p>
+      <a href="#" class="btn" onclick="addToCartAndShowMessage('SComfort Morning Fresh Fabric Conditioner ', 220)">Add to Cart</a>
+      <a href="#" class="buy-btn" onclick="buyNow('Comfort Morning Fresh Fabric Conditioner', 220)">Buy Now</a>
+    </div>
+    <!--  -->
+    <div class="product-item">
+      <img src="https://m.media-amazon.com/images/I/61JSo5lnG4L._AC_UL480_FMwebp_QL65_.jpg" alt="">
+        <h3>Presto! Matic Top Load Detergent Powder - 6 kg</h3>
+        <p>₹450</p>
+        <a href="#" class="btn" onclick="addToCartAndShowMessage('Presto! Matic', 450)">Add to Cart</a>
+        <a href="#" class="buy-btn" onclick="buyNow('Presto! Matic', 450)">Buy Now</a>
+      </div>
+    <!--  -->
+    <div class="product-item">
+      <img src="https://m.media-amazon.com/images/I/81TboOByzAL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+        <h3>Vedaka Premium Unpolished White Urad Whole, 1kg</h3>
+        <p>₹229</p>
+        <a href="#" class="btn" onclick="addToCartAndShowMessage('Vedaka Premium Unpolished White', 229)">Add to Cart</a>
+        <a href="#" class="buy-btn" onclick="buyNow('Vedaka Premium Unpolished White', 229)">Buy Now</a>
+      </div>
+    <!--  -->
+    <div class="product-item">
+      <img src="https://m.media-amazon.com/images/I/71xF9JoiB7L._AC_UL480_FMwebp_QL65_.jpg" alt="">
+        <h3>Godrej aer Power Pocket Bathroom Freshener  Assorted Pack of 5 (50g) |Gel Lasts up to 30 days | </h3>
+        <p>₹249</p>
+        <a href="#" class="btn" onclick="addToCartAndShowMessage('Ceregrow Kids Cereal', 249)">Add to Cart</a>
+        <a href="#" class="buy-btn" onclick="buyNow('Ceregrow Kids Cereal', 249)">Buy Now</a>
+      </div>
+  
+    <!-- Add more product items as needed -->
+  </div>
+</div>
+
+<div class="notification" id="notification"></div>
+
+<script src="./app.js">
+</script>
+
+</body>
+</html>
